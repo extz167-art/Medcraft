@@ -7,3 +7,6 @@ minecraftinstance.json
 /.vscode
 
 .probe
+kubejs/config/probe-settings.json
+usercache.json
+usernamecache.json
