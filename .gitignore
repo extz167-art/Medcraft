@@ -1,0 +1,7 @@
+.curseclient
+minecraftinstance.json
+/logs
+/saves
+
+.DS_Store
+/.vscode
