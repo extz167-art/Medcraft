@@ -5,3 +5,5 @@ minecraftinstance.json
 
 .DS_Store
 /.vscode
+
+.probe
