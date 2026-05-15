@@ -57,4 +57,26 @@ ServerEvents.recipes(event => {
     L: 'create:large_cogwheel',
     I: 'create:brass_ingot'
   })
+
+
+
+  // remove normal recipe
+  event.remove({ output: 'dndesires:handheld_drill' })
+
+  // add create mechanical crafting recipe
+  event.recipes.create.mechanical_crafting('dndesires:handheld_drill', [
+    ' I ',
+    ' M ',
+    'CHL',
+    'CBL',
+    ' S '
+  ], {
+    S: 'create:mechanical_drill',
+    B: 'create:brass_casing',
+    H: 'create:clutch',
+    M: 'create:precision_mechanism',
+    C: 'create:cogwheel',
+    L: 'create:large_cogwheel',
+    I: 'create:brass_ingot'
+  })
 })
