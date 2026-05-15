@@ -16,12 +16,13 @@
   // Items here will be unusable completely
   //    Example: minecraft:diamond
   "blacklisted_items": [
-    "examplemod:example_item",
+    "createaddition:alternator",
     "createbigcannons:steel_ingot",
     "createbigcangnons:cast_iron_ingot",
     "cgs:steel_ingot",
     "computercraft:turtle_normal",
     "computercraft:turtle_advanced",
+    "tfmg:copper_wire",
     "tfmg:winding_machine",
     "tfmg:copycat_cable_block",
     "tfmg:brass_cable_hub",
@@ -41,7 +42,10 @@
     "tfmg:voltmeter",
     "tfmg:transformer",
     "tfmg:converter",
-    "tfmg:large_coil"
+    "tfmg:large_coil",
+    "grapplemod:long_fall_boots",
+    "grapplemod:long_fall_boots_smithing_template",
+    "grapplemod:ender_staff"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
