@@ -1,0 +1,29 @@
+[stage]
+id = "medcraft_automation"
+display_name = "Automation"
+description = "Unlocks automated item handling and crafting."
+icon = "create:deployer"
+unlock_message = "Automation researched."
+dependency = "medcraft_mechanical_power"
+
+[items]
+locked = [
+  "create:deployer",
+  "create:mechanical_crafter"
+]
+always_unlocked = []
+
+[blocks]
+locked = [
+  "create:deployer",
+  "create:mechanical_crafter"
+]
+always_unlocked = []
+
+[recipes]
+locked_ids = []
+locked_items = [
+  "create:deployer",
+  "create:mechanical_crafter"
+]
+always_unlocked = []

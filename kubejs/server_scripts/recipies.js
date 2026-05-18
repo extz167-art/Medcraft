@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
-  // remove normal recipe
   event.remove({ output: 'computercraft:computer_normal' })
-
-  // add create mechanical crafting recipe
   event.recipes.create.mechanical_crafting('computercraft:computer_normal', [
     ' C ',
     'GGG',
@@ -18,12 +15,7 @@ ServerEvents.recipes(event => {
     P: 'create:precision_mechanism'
   })
 
-
-
-  // remove normal recipe
   event.remove({ output: 'computercraft:computer_advanced' })
-
-  // add create mechanical crafting recipe
   event.recipes.create.mechanical_crafting('computercraft:computer_advanced', [
     ' B ',
     'FCG',
@@ -36,12 +28,16 @@ ServerEvents.recipes(event => {
     F: 'create:encased_fan'
   })
 
+  event.remove({ id: 'computercraft:pocket_computer_normal' })
+  event.recipes.create.pressing(Item.of('computercraft:pocket_computer_normal'), 'computercraft:computer_normal')
+    .id('kubejs:pressing/pocket_computer_normal')
+
+  event.remove({ id: 'computercraft:pocket_computer_advanced' })
+  event.recipes.create.pressing(Item.of('computercraft:pocket_computer_advanced'), 'computercraft:computer_advanced')
+    .id('kubejs:pressing/pocket_computer_advanced')
 
 
-  // remove normal recipe
   event.remove({ output: 'dndesires:handheld_saw' })
-
-  // add create mechanical crafting recipe
   event.recipes.create.mechanical_crafting('dndesires:handheld_saw', [
     ' I ',
     ' M ',
@@ -50,7 +46,7 @@ ServerEvents.recipes(event => {
     ' S '
   ], {
     S: 'create:mechanical_saw',
-    B: 'create:brass_casing',
+    B: 'create:andesite_casing',
     H: 'create:clutch',
     M: 'create:precision_mechanism',
     C: 'create:cogwheel',
@@ -58,12 +54,7 @@ ServerEvents.recipes(event => {
     I: 'create:brass_ingot'
   })
 
-
-
-  // remove normal recipe
   event.remove({ output: 'dndesires:handheld_drill' })
-
-  // add create mechanical crafting recipe
   event.recipes.create.mechanical_crafting('dndesires:handheld_drill', [
     ' I ',
     ' M ',

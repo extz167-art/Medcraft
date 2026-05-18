@@ -1,0 +1,13 @@
+{
+	chapter.1000000000000000.title: "Research"
+	quest.1000000000000001.quest_subtitle: "Submit 25 Basic Research Data"
+	quest.1000000000000001.title: "Steel Processing"
+	quest.1000000000000002.quest_subtitle: "Submit 20 Basic Research Data"
+	quest.1000000000000002.title: "Mechanical Power"
+	quest.1000000000000003.quest_subtitle: "Submit 30 Logistics Research Data"
+	quest.1000000000000003.title: "Automation"
+	quest.1000000000000004.quest_subtitle: "Submit 40 Logistics Research Data"
+	quest.1000000000000004.title: "Computing"
+	quest.1000000000000005.quest_subtitle: "Submit 50 Energy Research Data"
+	quest.1000000000000005.title: "Nuclear Power"
+}
