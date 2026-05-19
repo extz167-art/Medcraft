@@ -16,7 +16,6 @@
   // Items here will be unusable completely
   //    Example: minecraft:diamond
   "blacklisted_items": [
-    "createaddition:alternator",
     "createbigcannons:steel_ingot",
     "createbigcangnons:cast_iron_ingot",
     "cgs:steel_ingot",
@@ -45,7 +44,9 @@
     "tfmg:large_coil",
     "grapplemod:long_fall_boots",
     "grapplemod:long_fall_boots_smithing_template",
-    "grapplemod:ender_staff"
+    "grapplemod:ender_staff",
+    "createpropulsion:cable",
+    "createpropulsion:cable_relay"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
