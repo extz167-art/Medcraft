@@ -52,9 +52,12 @@ ServerEvents.recipes(event => {
   labRecipes.forEach(recipe => {
     event.recipes.modular_machinery_reborn
       .machine_recipe('medcraft:research_lab', recipe.time)
-      .requireItem(SizedIngredient.of(`medcraft:${recipe.type}_research_pack`, 10))
-      .requireEnergyPerTick(recipe.energyPerTick)
-      .produceItem(SizedIngredient.of(`medcraft:${recipe.type}_research_data`, 1))
+      .width(120)
+      .height(60)
+      .requireItem(SizedIngredient.of(`medcraft:${recipe.type}_research_pack`, 10), 10, 18)
+      .requireEnergyPerTick(recipe.energyPerTick, 10, 38)
+      .produceItem(SizedIngredient.of(`medcraft:${recipe.type}_research_data`, 1), 80, 18)
+      .jei()
       .id(`medcraft:research_lab/${recipe.type}_research_data`)
   })
 })

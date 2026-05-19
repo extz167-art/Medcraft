@@ -6,22 +6,26 @@ MMREvents.machines(event => {
       MMRStructureBuilder.create()
         .pattern([
           [
-            'III',
-            'ICI',
-            'OOO'
+            'baa',
+            'aaa',
+            'aac'
           ],
           [
-            'AAA',
-            'AEA',
-            'AAA'
+            'ama',
+            'a a',
+            'aaa'
+          ],
+          [
+            'aaa',
+            'aea',
+            'aaa'
           ]
         ])
         .keys({
-          A: 'modular_machinery_reborn:casing_plain',
-          C: 'modular_machinery_reborn:controller',
-          E: 'modular_machinery_reborn:energyinputhatch_normal',
-          I: 'modular_machinery_reborn:inputbus_normal',
-          O: 'modular_machinery_reborn:outputbus_normal'
+          a: ['modular_machinery_reborn:casing_plain'],
+          b: ['#modular_machinery_reborn:inputbus'],
+          c: ['#modular_machinery_reborn:outputbus'],
+          e: ['#modular_machinery_reborn:energyinputhatch']
         })
     )
 })
