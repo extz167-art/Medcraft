@@ -38,14 +38,25 @@
 				id: "create:mechanical_press"
 			}
 			id: "1000000000000002"
-			rewards: [{
-				auto: "enabled"
-				command: "stage grant @s medcraft_mechanical_power"
-				id: "1000000000000202"
-				permission_level: 2
-				team_reward: true
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "enabled"
+					command: "stage grant @s medcraft_mechanical_power"
+					id: "1000000000000202"
+					permission_level: 2
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						id: "minecraft:oak_log"
+					}
+					id: "47CC8F01BF8CB22A"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 20L
