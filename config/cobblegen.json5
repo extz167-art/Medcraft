@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1.0",
+  "cobbleGen": [
+    {
+      "id": "minecraft:water",
+      "weight": 100.0
+    }
+  ],
+  "stoneGen": [
+    {
+      "id": "minecraft:water",
+      "weight": 100.0
+    }
+  ],
+  "basaltGen": [
+    {
+      "id": "minecraft:water",
+      "weight": 100.0
+    }
+  ]
+}
