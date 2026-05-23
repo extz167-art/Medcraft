@@ -1,0 +1,29 @@
+[stage]
+id = "medcraft_mechanical_power"
+display_name = "Mechanical Power"
+description = "Unlocks early Create kinetic processing."
+icon = "create:mechanical_press"
+unlock_message = "Mechanical Power researched."
+dependency = ""
+
+[items]
+locked = [
+  "create:mechanical_press",
+  "create:millstone"
+]
+always_unlocked = []
+
+[blocks]
+locked = [
+  "create:mechanical_press",
+  "create:millstone"
+]
+always_unlocked = []
+
+[recipes]
+locked_ids = []
+locked_items = [
+  "create:mechanical_press",
+  "create:millstone"
+]
+always_unlocked = []

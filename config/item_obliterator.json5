@@ -17,7 +17,7 @@
   //    Example: minecraft:diamond
   "blacklisted_items": [
     "createbigcannons:steel_ingot",
-    "createbigcangnons:cast_iron_ingot",
+    "createbigcannons:cast_iron_ingot",
     "cgs:steel_ingot",
     "computercraft:turtle_normal",
     "computercraft:turtle_advanced",
