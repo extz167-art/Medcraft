@@ -24,8 +24,8 @@ ServerEvents.recipes(event => {
     // If finite veins are disabled/default infinite is true, this only matters when finite generation is enabled.
     .veinSize(10, 30)
     // biomeWhitelist(tagOrId) limits where the vein can generate.
-    // minecraft:is_overworld keeps this vein in overworld biomes.
-    .biomeWhitelist('minecraft:is_overworld')
+    // kubejs:no_natural_resource_veins is an empty biome tag, so these veins do not naturally generate.
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     // id(...) is the recipe id and also the vein id used by drilling/extracting recipes.
     .id('kubejs:stone_vein')
 
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     // This placement is intentionally different from the other veins so it has its own distribution.
     .placement(96, 8, 709368741)
     .veinSize(8, 20)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:lava_reservoir')
 
   // extracting(outputFluid, veinId, ticks) adds a fluid output recipe for a vein.
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Deepslate Vein"}', 'minecraft:deepslate')
     .placement(64, 8, 195684023)
     .veinSize(10, 30)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:deepslate_vein')
 
   event.recipes.createoreexcavation.drilling(
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Andesite Vein"}', 'minecraft:andesite')
     .placement(64, 8, 113684921)
     .veinSize(10, 30)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:andesite_vein')
 
   event.recipes.createoreexcavation.drilling(
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Calcite Vein"}', 'minecraft:calcite')
     .placement(64, 8, 194720385)
     .veinSize(8, 24)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:calcite_vein')
 
   event.recipes.createoreexcavation.drilling(
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Asurine Vein"}', 'create:asurine')
     .placement(96, 8, 682941507)
     .veinSize(6, 18)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:asurine_vein')
 
   event.recipes.createoreexcavation.drilling(
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Veridium Vein"}', 'create:veridium')
     .placement(96, 8, 170392458)
     .veinSize(6, 18)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:veridium_vein')
 
   event.recipes.createoreexcavation.drilling(
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Ochrum Vein"}', 'create:ochrum')
     .placement(96, 8, 890134266)
     .veinSize(6, 18)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:ochrum_vein')
 
   event.recipes.createoreexcavation.drilling(
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
   event.recipes.createoreexcavation.vein('{"text":"Crimsite Vein"}', 'create:crimsite')
     .placement(96, 8, 306715924)
     .veinSize(6, 18)
-    .biomeWhitelist('minecraft:is_overworld')
+    .biomeWhitelist('kubejs:no_natural_resource_veins')
     .id('kubejs:crimsite_vein')
 
   event.recipes.createoreexcavation.drilling(
