@@ -13,7 +13,7 @@
 	grid_scale: 0.5d
 	hide_excluded_quests: false
 	icon: {
-		id: "medcraft:basic_research_data"
+		id: "minecraft:book"
 	}
 	lock_message: ""
 	loot_crate_no_drop: {
