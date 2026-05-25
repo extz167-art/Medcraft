@@ -70,4 +70,30 @@ ServerEvents.recipes(event => {
     L: 'create:large_cogwheel',
     I: 'create:brass_ingot'
   })
+
+  event.remove({ output: 'ohmymeteors:meteoric_alloy' })
+  event.recipes.create.mixing('ohmymeteors:meteoric_alloy', [
+    '2x minecraft:iron_ingot',
+    '2x ohmymeteors:meteoric_chunk'
+  ]).id('kubejs:mixing/meteoric_alloy')
+
+  event.recipes.create.crushing([
+    Item.of('minecraft:raw_gold').withChance(0.5),
+    Item.of('minecraft:raw_copper').withChance(0.5),
+    Item.of('create:raw_zinc').withChance(0.5),
+    Item.of('minecraft:raw_iron').withChance(0.5),
+    Item.of('minecraft:redstone').withChance(0.5),
+    Item.of('minecraft:lapis_lazuli').withChance(0.5)
+  ], 'ohmymeteors:meteoric_chunk').id('kubejs:crushing/meteoric_chunk')
+
+  event.remove({ output: 'sophisticatedbackpacks:upgrade_base' })
+  event.shaped('sophisticatedbackpacks:upgrade_base', [
+    'SIS',
+    'IMI',
+    'SIS'
+  ], {
+    S: '#c:strings',
+    I: '#c:ingots/iron',
+    M: 'ohmymeteors:meteoric_alloy'
+  }).id('kubejs:shaped/upgrade_base')
 })
