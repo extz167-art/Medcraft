@@ -16,6 +16,8 @@
   // Items here will be unusable completely
   //    Example: minecraft:diamond
   "blacklisted_items": [
+    "constructionwand:stone_wand",
+    "constructionwand:iron_wand",
     "create:cart_assembler",
     "createbigcannons:steel_ingot",
     "createbigcannons:cast_iron_ingot",

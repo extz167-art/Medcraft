@@ -77,14 +77,21 @@ ServerEvents.recipes(event => {
     '2x ohmymeteors:meteoric_chunk'
   ]).id('kubejs:mixing/meteoric_alloy')
 
-  event.recipes.create.crushing([
-    Item.of('minecraft:raw_gold').withChance(0.5),
-    Item.of('minecraft:raw_copper').withChance(0.5),
-    Item.of('create:raw_zinc').withChance(0.5),
-    Item.of('minecraft:raw_iron').withChance(0.5),
-    Item.of('minecraft:redstone').withChance(0.5),
-    Item.of('minecraft:lapis_lazuli').withChance(0.5)
-  ], 'ohmymeteors:meteoric_chunk').id('kubejs:crushing/meteoric_chunk')
+  event.custom({
+    type: 'create:crushing',
+    ingredients: [
+      { item: 'ohmymeteors:meteoric_chunk' }
+    ],
+    processing_time: 250,
+    results: [
+      { id: 'minecraft:raw_gold', chance: 0.5 },
+      { id: 'minecraft:raw_copper', chance: 0.5 },
+      { id: 'create:raw_zinc', chance: 0.5 },
+      { id: 'minecraft:raw_iron', chance: 0.5 },
+      { id: 'minecraft:redstone', chance: 0.5 },
+      { id: 'minecraft:lapis_lazuli', chance: 0.5 }
+    ]
+  }).id('kubejs:crushing/meteoric_chunk')
 
   event.remove({ output: 'sophisticatedbackpacks:upgrade_base' })
   event.shaped('sophisticatedbackpacks:upgrade_base', [
@@ -96,4 +103,16 @@ ServerEvents.recipes(event => {
     I: '#c:ingots/iron',
     M: 'ohmymeteors:meteoric_alloy'
   }).id('kubejs:shaped/upgrade_base')
+
+  event.remove({ output: 'create_jet_boots:jet_boots' })
+  event.shaped('create_jet_boots:jet_boots', [
+    'E E',
+    'CBC',
+    'M M'
+  ], {
+    B: 'create:copper_diving_boots',
+    C: 'create:cogwheel',
+    E: 'create:electron_tube',
+    M: 'ohmymeteors:meteoric_alloy'
+  }).id('kubejs:shaped/jet_boots')
 })
