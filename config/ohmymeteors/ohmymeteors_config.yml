@@ -2,9 +2,9 @@
 version:7
 
 #Expressed in blocks, represents the min distance (as in a radius) from the origin of the meteor (like a player) in which the meteor wont' spawn in. (Remember that it has an angled trajectory so it could end up in that area regardless) | default= 2 | type= Integer
-min_meteor_spawn_distance:500
+min_meteor_spawn_distance:5000
 #Expressed in blocks, represents the max distance (as in a radius) from the origin of the meteor (like a player) in which a meteor can spawn in. (Remember that it has an angled trajectory so it could end up in that area regardless) | default= 25 | type= Integer
-max_meteor_spawn_distance:2500
+max_meteor_spawn_distance:10000
 #The world height (y level) at which meteors spawn in | default= 300 | type= Integer
 meteor_spawn_height:300
 #The higher the value the less the meteor will go diagonally, and will keep mostly vertical. (randomness remains so it's not 100%). Generally, you can remain between 1 and 10. | default= 3.1 | type= Double
@@ -14,7 +14,7 @@ meteor_spawn_chance:30000
 #Should huge meteors be able to spawn? They are meteors bigger than the maximum size of the big ones | default= true | type= Boolean
 spawn_huge_meteors:true
 #The chance for a spawned meteor to be of huge size. Expressed as in 1 in x chances. (on top of the 'normal' spawning chance) | default= 100 | type= Integer
-huge_meteor_chance:100
+huge_meteor_chance:50
 #The size limit of how big a huge meteor can be | default= 40 | type= Integer
 huge_meteor_size_limit:40
 #Should the spawn rate be different during the night? | default= false | type= Boolean
@@ -47,16 +47,16 @@ actionbar_announcements:true
 #If announcements are enabled, should they also display the (approximate) coordinates of the meteor being spawned/destroyed? | default= true | type= Boolean
 announce_location:true
 #Should the explosion sound of the meteor be heard by all players online? | default= false | type= Boolean
-global_explosion_sound:false
+global_explosion_sound:true
 #Should the explosion sound of the meteor be heard by all players around a certain area from the impact point? | default= false | type= Boolean
 area_explosion_sound:false
 #The radius in blocks of the area in which the sound of the meteor will be heard if the option above is true | default= 500 | type= Integer
-area_explosion_sound_radius:500
+area_explosion_sound_radius:10000
 
 #Should there be a cooldown between a meteor spawning one meteor and then another? | default= true | type= Boolean
 should_cooldown_between_meteors:true
 #The minimum time interval (in seconds) between spawning a meteor and then another | default= 20 | type= Integer
-min_meteor_cooldown_time:3600
+min_meteor_cooldown_time:10800
 #Should meteors be able to destroy blocks on impact? | default= true | type= Boolean
 meteor_griefing:true
 #Should the meteors that come out of a bigger meteor when it's broken be able to destroy blocks on impact? | default= true | type= Boolean
@@ -90,9 +90,9 @@ should_advanced_laser_cooldown:true
 advanced_laser_cooldown:1
 
 #The maximum size of meteor that can be considered small, and will spawn a small meteor structure upon impact | default= 4 | type= Integer
-max_small_meteor_size:4
+max_small_meteor_size:10
 #The maximum size of meteor that can be considered medium, and will spawn a medium meteor structure upon impact | default= 7 | type= Integer
-max_medium_meteor_size:7
+max_medium_meteor_size:15
 #The maximum size of meteor that can be considered big, and will spawn a big meteor structure upon impact. Only these can spawn a meteor cat by default. | default= 20 | type= Integer
 max_big_meteor_size:20
 #The chance of spawning a special meteor structure in a certain size category (for example the meteor cat meteor) (works like the other chances, aka 1 in x probability) | default= 10 | type= Integer
@@ -122,7 +122,7 @@ use_better_explosions:true
 meteor_render_distance:200
 
 #If true, there will be a chance that meteor showers will spawn (a lot of meteors spawning at the same time & place. it can also cause brief lag spikes, nothing too dramatic tho) | default= true | type= Boolean
-meteor_showers_enabled:true
+meteor_showers_enabled:false
 #The chance for a meteor shower to spawn (on top of the normal meteor spawning chance, so it's meteor_spawn*meteor_shower spawn) | default= 100 | type= Integer
 meteor_shower_chance:100
 #The minimum number of meteors that are going to spawn in the meteor shower. | default= 5 | type= Integer
