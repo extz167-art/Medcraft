@@ -99,7 +99,7 @@ max_big_meteor_size:20
 special_meteors_chance:10
 
 #Should meteor and laser particles be forced? They will be rendered further away and look better, but if there are too many of them you may want to disable this for lag reasons. Note: some particles will never displays as forced, like the lasers target box | default= true | type= Boolean
-use_forced_particles:true
+use_forced_particles:false
 
 #A list of the IDs of the dimensions in which meteors can naturally spawn in, vanilla or not. | default= [minecraft:overworld, minecraft:the_end] | type= List12
 spawn_dimensions:[minecraft:overworld, minecraft:the_end]
