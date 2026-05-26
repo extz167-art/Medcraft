@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "rha:hardsteelrota",
+    "rha:layeredsteelrota",
+    "rha:rivetedsteelrota",
+    "rha:slashedsteelrota",
+    "rha:hardsteelscale",
+    "rha:layeredsteelscale",
+    "rha:rivetedsteelscale",
+    "rha:slashedsteelscale",
+    "rha:hardsteelgorge",
+    "rha:layeredsteelgorge",
+    "rha:rivetedsteelgorge",
+    "rha:slashedsteelgorge"
+  ]
+}

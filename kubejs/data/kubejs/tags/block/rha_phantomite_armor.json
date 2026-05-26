@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "rha:hardsteelgravel",
+    "rha:layeredsteelgravel",
+    "rha:rivetedsteelgravel",
+    "rha:slashedsteelgravel",
+    "rha:hardsteeldust",
+    "rha:layeredsteeldust",
+    "rha:rivetedsteeldust",
+    "rha:slashedsteeldust",
+    "rha:hardsteelkampfgrau",
+    "rha:layeredsteelkampfgrau",
+    "rha:rivetedsteelkampfgrau",
+    "rha:slashedsteelkampfgrau"
+  ]
+}

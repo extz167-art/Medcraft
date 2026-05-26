@@ -1,0 +1,6 @@
+{
+  "selector": "#kubejs:rha_phantomite_armor",
+  "properties": {
+    "sable:mass": 0.5
+  }
+}

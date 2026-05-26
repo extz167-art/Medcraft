@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "rha:hardsteelcharcoal",
+    "rha:layeredsteelcharcoal",
+    "rha:rivetedsteelcharcoal",
+    "rha:slashedsteelcharcoal",
+    "rha:hardsteeljet",
+    "rha:layeredsteeljet",
+    "rha:rivetedsteeljet",
+    "rha:slashedsteeljet",
+    "rha:hardsteelslate",
+    "rha:layeredsteelslate",
+    "rha:rivetedsteelslate",
+    "rha:slashedsteelslate"
+  ]
+}

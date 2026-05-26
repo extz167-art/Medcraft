@@ -71,11 +71,26 @@ ServerEvents.recipes(event => {
     I: 'create:brass_ingot'
   })
 
+  event.remove({ output: 'drivebywire:controller_hub' })
+  event.recipes.create.mechanical_crafting('drivebywire:controller_hub', [
+    ' EM',
+    'LBM',
+    ' PM'
+  ], {
+    E: 'create:electron_tube',
+    B: 'create:brass_casing',
+    P: 'create:precision_mechanism',
+    L: 'create:linked_controller',
+    M: 'ohmymeteors:meteoric_alloy'
+  })
+
   event.remove({ output: 'ohmymeteors:meteoric_alloy' })
   event.recipes.create.mixing('ohmymeteors:meteoric_alloy', [
-    '2x minecraft:iron_ingot',
-    '2x ohmymeteors:meteoric_chunk'
+    '2x create:brass_ingot',
+    '5x ohmymeteors:meteoric_chunk'
   ]).id('kubejs:mixing/meteoric_alloy')
+
+  event.remove({ id: 'ohmymeteors:iron_ore' })
 
   event.custom({
     type: 'create:crushing',
@@ -84,12 +99,12 @@ ServerEvents.recipes(event => {
     ],
     processing_time: 250,
     results: [
-      { id: 'minecraft:raw_gold', chance: 0.5 },
-      { id: 'minecraft:raw_copper', chance: 0.5 },
-      { id: 'create:raw_zinc', chance: 0.5 },
-      { id: 'minecraft:raw_iron', chance: 0.5 },
-      { id: 'minecraft:redstone', chance: 0.5 },
-      { id: 'minecraft:lapis_lazuli', chance: 0.5 }
+      { id: 'minecraft:raw_gold', count: 2, chance: 0.3 },
+      { id: 'minecraft:raw_copper', count: 2, chance: 0.3 },
+      { id: 'create:raw_zinc', count: 2, chance: 0.3 },
+      { id: 'minecraft:raw_iron', count: 2, chance: 0.3 },
+      { id: 'minecraft:redstone', count: 5, chance: 0.3 },
+      { id: 'minecraft:lapis_lazuli', count: 5, chance: 0.3 }
     ]
   }).id('kubejs:crushing/meteoric_chunk')
 

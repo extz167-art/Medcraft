@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "rha:hardsteelgelb",
+    "rha:layeredsteelgelb",
+    "rha:rivetedsteelgelb",
+    "rha:slashedsteelgelb",
+    "rha:hardsteelgarupan",
+    "rha:layeredsteelgarupan",
+    "rha:rivetedsteelgarupan",
+    "rha:slashedsteelgarupan",
+    "rha:hardsteelgrizzly",
+    "rha:layeredsteelgrizzly",
+    "rha:rivetedsteelgrizzly",
+    "rha:slashedsteelgrizzly"
+  ]
+}
