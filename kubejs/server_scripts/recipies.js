@@ -92,6 +92,13 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'ohmymeteors:iron_ore' })
 
+  event.remove({ output: 'minecraft:ender_eye' })
+  event.recipes.create.mixing('minecraft:ender_eye', [
+    'minecraft:ender_pearl',
+    'minecraft:blaze_powder',
+    'ohmymeteors:meteoric_alloy'
+  ]).id('kubejs:mixing/ender_eye')
+
   event.custom({
     type: 'create:crushing',
     ingredients: [
