@@ -137,4 +137,11 @@ ServerEvents.recipes(event => {
     E: 'create:electron_tube',
     M: 'ohmymeteors:meteoric_alloy'
   }).id('kubejs:shaped/jet_boots')
+
+  event.remove({ output: 'createpropulsion:coral_generator' })
+  event.remove({ output: 'fluid:quicksand' })
+  event.remove({ output: 'fluid:quicksand_fluid' })
+  event.remove({ output: 'fluid:quicksand_bucket' })
+  event.remove({ id: 'fluid:mixing/quicksand_from_sand' })
+  event.remove({ id: 'fluid:compacting/quicksand_to_sand' })
 })
